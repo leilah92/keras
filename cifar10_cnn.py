@@ -128,6 +128,7 @@ def train(params):
 
 if __name__ == '__main__':
     use_valohai_input()
+    print(input_dir)
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch_size', type=int)
