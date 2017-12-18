@@ -25,6 +25,7 @@ def use_valohai_input():
 
     inputs_dir = os.getenv('VH_INPUTS_DIR', '/')
     input_dir = os.path.join(inputs_dir, 'cifar-10-batches-py')
+    print(input_dir)
     input_files = os.listdir(input_dir)
 
     untar_fpath = os.path.join(datadir, 'cifar-10-batches-py')
@@ -128,7 +129,7 @@ def train(params):
 
 if __name__ == '__main__':
     use_valohai_input()
-    print(input_dir)
+    
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch_size', type=int)
